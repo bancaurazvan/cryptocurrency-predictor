@@ -7,39 +7,8 @@
 #
 # THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #
-# preprocess_data.py
-# This file will preprocess the data for our cryptocurrency predictor AI.
-#
-__author__ = "Firebolt, Inc."
-__copyright__ = "Firebolt, Inc."
-__version__ = "1.0.0"
-__license__ = "MIT"
-
-import math
-import numpy as np
-import pandas as pd
-
-class Data():
-    def __init__(self, data_file, split, cols):
-        data = pd.read_csv(data_file)
-        i_split = int(len(data) * split)
-        self.data_train = data.get(cols).values[:i_split]
-        self.data_test = data.get(cols).values[i_split:]
-        self.len_train = len(self.data_train)
-        self.len_test = len(self.data_test)
-        self.len_train_windows = None
-    
-    def get_test_data(self, seq_len, normalise):
-        pass
-    
-    def get_train_data(self, seq_len, normalise):
-        pass
-    
-    def generate_train_batch(self, seq_len, batch_size, normalise):
-        pass
-
-    def next_window(self, i, seq_len, normalise):
-        pass
-    
-    def normalise_windows(self, window_data, single_window=False):
-        pass
+# .research
+# Marks the configuration for the research/ folder.
+[ProjectGradleSettings]
+SDKDebug=/sdk/$ROOT/debug/
+SDKType=/sdk/$ROOT/research/*
