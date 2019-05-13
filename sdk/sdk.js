@@ -1,4 +1,4 @@
-const sdk;
+const sdk = require('./src/main.js');
 sdkConfigure = sdk.configure({
     configSDK: {
         "evaluatorSDK": true,
