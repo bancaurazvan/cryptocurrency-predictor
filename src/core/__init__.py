@@ -16,5 +16,5 @@ __version__ = "1.0.0"
 __license__ = "MIT"
 
 import warnings # Import the warning package
-warnings.filters("warnings") # Ignore any warnings that are classified as 'warnings'
-warnings.filters("info") # Ignore any messages that are classified as 'info'
+warnings.filterwarnings("ignore") # Ignore any warnings that are classified as 'warnings'
+warnings.filterwarnings("ignore") # Ignore any messages that are classified as 'info'
