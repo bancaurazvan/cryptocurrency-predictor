@@ -20,10 +20,21 @@ import math
 import numpy as np
 import datetime as dt
 from numpy import newaxis
-from utility import Counter
 from keras.layers import Dense, Activation, Dropout, LSTM
 from keras.models import Sequential, load_model
 from keras.callbacks import EarlyStopping, ModelCheckpoint
+import datetime
+
+class Counter():
+    def __init__(self):
+        self.start_counter = None
+    
+    def start(self):
+        self.start_counter = datetime.datetime.now()
+    
+    def stop(self):
+        stop_counter = datetime.datetime.now()
+        print('Time It Took: %s' %(stop_counter - self.start_counter))
 
 class Model():
 	def __init__(self):
