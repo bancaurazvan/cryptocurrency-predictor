@@ -7,7 +7,7 @@ sdkConfigure = sdk.configure({
     },
     evaluateSDK: {},
     rocketName: {
-        "name": "n/a",
+        "name": "Sharon ROCKET",
         "components": {
             "software": {},
             "hardware": {}
