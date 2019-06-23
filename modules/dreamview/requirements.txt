@@ -1,0 +1,12 @@
+numpy
+scipy
+requests
+pyyaml
+tensorflow==1.13.1
+keras
+Flask
+flask_sqlalchemy
+flask_httpauth
+passlib
+functions
+fbprophet
